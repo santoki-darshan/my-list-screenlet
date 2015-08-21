@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.liferay.mobile.screens.messageboardscreenlet.view.MessageDetailView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/msgdetail_ll_reply">
+
+        <RelativeLayout
+            android:id="@+id/msgdetail_rl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/msgdetail_card_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                card_view:cardElevation="5dp">
+
+                <LinearLayout
+                    android:id="@+id/msgdetail_ll_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/msgdetail_tv_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/temp"
+                        android:textColor="#444444"
+                        android:textSize="31sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/msgdetail_iv_dp"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:contentDescription="@string/user_dp"
+                            android:src="@drawable/profile"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/msgdetail_tv_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:text="by Jitesh D, 1 hour ago"
+                            android:textColor="#999999"
+                            android:textSize="18sp"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/msgdetail_iv_saperator"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#CCCCCC"
+                        android:contentDescription="@string/line_saperator"
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/msgdetail_tv_postcounts"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="32"
+                            android:textColor="#666666"
+                            android:textSize="24sp"/>
+
+                        <TextView
+                            android:id="@+id/msgdetail_tv_posttext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/post"
+                            android:textColor="#999999"
+                            android:textSize="18sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/msgdetail_tv_viewcounts"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginStart="20dp"
+                            android:text="100"
+                            android:textColor="#666666"
+                            android:textSize="24sp"/>
+
+                        <TextView
+                            android:id="@+id/msgdetail_tv_viewtext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/views"
+                            android:textColor="#999999"
+                            android:textSize="18sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/msgdetail_tv_body"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/temp"
+                        android:textSize="26sp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/msgdetail_card_detail"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                card_view:cardElevation="5dp">
+
+                <TextView
+                    android:id="@+id/msgdetail_tv_replycount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/n_answer_on_post"
+                    android:textSize="18sp"/>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/msgdetail_ll_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end|bottom"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/msgdetail_et_reply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/write_quick_reply"
+            android:inputType="textMultiLine"
+            android:maxLines="4"/>
+
+        <ImageView
+            android:id="@+id/msgdetail_iv_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/quick_reply"
+            android:src="@drawable/ic_send_black_48dp"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/msgdetail_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+
+</com.liferay.mobile.screens.messageboardscreenlet.view.MessageDetailView>

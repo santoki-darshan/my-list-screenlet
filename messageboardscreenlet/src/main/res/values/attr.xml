@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyListScreenlet">
+        <attr name="interactorClassName" format="string"/>
+        <attr name="itemLayoutId" format="reference"/>
+        <attr name="itemProgressLayoutId" format="reference"/>
+        <attr name="adapterClassName" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="MessageDetailScreenlet">
+        <attr name="layoutId"/>
+    </declare-styleable>
+</resources>

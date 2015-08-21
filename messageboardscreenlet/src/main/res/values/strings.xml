@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MessageBoardScreenlet</string>
+    <string name="temp">Temp</string>
+    <string name="views">Views</string>
+    <string name="post">Post</string>
+    <string name="by_1s_2s_ago">by %1$s, %2$s ago</string>
+    <string name="by_1s_on_2s">by %1$s on %2$s</string>
+    <string name="line_saperator">Line saperator</string>
+    <string name="user_dp">User dp</string>
+    <string name="write_quick_reply">Write quick reply&#8230;</string>
+    <string name="quick_reply">Quick reply</string>
+    <string name="n_answer_on_post">(%1$d) Answer on Post</string>
+</resources>

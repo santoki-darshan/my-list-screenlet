@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/msgrow_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/temp"
+        android:textColor="#444444"
+        android:textSize="26sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/msgrow_iv_dp"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:contentDescription="@string/user_dp"
+            android:src="@drawable/profile"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/msgrow_tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:text="by Jitesh D, 1 hour ago"
+            android:textColor="#999999"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/msgrow_iv_saperator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#CCCCCC"
+        android:contentDescription="@string/line_saperator"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/msgrow_tv_postcounts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="32"
+            android:textColor="#666666"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/msgrow_tv_posttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:text="@string/post"
+            android:textColor="#999999"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/msgrow_tv_viewcounts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:text="100"
+            android:textColor="#666666"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/msgrow_tv_viewtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:text="@string/views"
+            android:textColor="#999999"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>
