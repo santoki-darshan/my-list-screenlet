@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CursorListViewScreenlet</string>
+    <string name="no_data">Oops no data!</string>
+    <string name="temp">Temp</string>
+</resources>
